@@ -1,0 +1,12 @@
+[package]
+name = "mod-economy-api"
+version = "1.0.0"
+edition = "2024"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+# The build points this at the pinned Horizon source. Any other dependency must be a crate and
+# version in Horizon's Cargo.lock.
+horizon-client = { git = "https://github.com/horizon-rust/horizon", rev = "fdc87aecdbd116bf1e08adcd062fcbaea8c2e2ca" }

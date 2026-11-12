@@ -1,0 +1,16 @@
+# economy_api: the economy's public contract (a trait and a registry), in the style of Bukkit's Vault.
+# Other mods depend only on this mod, never on a concrete economy:
+#
+#   [dependencies]
+#   economy_api = { version = "^1", optional = true }
+#
+# An economy (the `economy` mod, or any replacement) registers itself here in its `hooks()`.
+[mod]
+id = "economy_api"
+version = "1.0.0"
+
+[compatibility]
+horizon_revision = "fdc87aecdbd116bf1e08adcd062fcbaea8c2e2ca"
+
+[api]
+path = "api"
